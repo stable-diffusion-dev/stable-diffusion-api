@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stable-diffusion-api"
+version = "0.1.0"
+description = "Python client for the Stable Diffusion API — SD, SDXL and SDXL-Lightning text-to-image through a hosted endpoint"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "stable-diffusion-dev"}]
+keywords = ["ai api", "sdxl", "sdxl-lightning-4step", "stable diffusion", "stable diffusion api", "stable diffusion python", "stable-diffusion", "synexa"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["httpx>=0.24"]
+
+[project.urls]
+Homepage = "https://github.com/stable-diffusion-dev/stable-diffusion-api"
+Documentation = "https://stable-diffusion-dev.github.io/stable-diffusion-api/"
+"Hosted model" = "https://synexa.ai/explore/stability-ai/stable-diffusion?utm_source=github&utm_medium=ugc&utm_campaign=stable-diffusion-dev&utm_content=pyproject&utm_term=tier-a"
+
+[tool.setuptools.packages.find]
+include = ["stable_diffusion_api*"]
